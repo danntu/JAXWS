@@ -11,7 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
-  <a href="rest/hello">Click Here</a>
+  <a href="rest/hello">Click Here Rest Jersey</a><br>
+  <a href="restanot/hello/javatpoint">Click Here Rest annotation</a>
   </body>
 </html>
