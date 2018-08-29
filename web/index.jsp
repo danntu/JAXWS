@@ -12,5 +12,6 @@
   </head>
   <body>
   $END$
+  <a href="rest/hello">Click Here</a>
   </body>
 </html>

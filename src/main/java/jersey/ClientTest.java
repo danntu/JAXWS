@@ -12,9 +12,11 @@ public class ClientTest {
         ClientConfig config = new ClientConfig();
         Client client = ClientBuilder.newClient(config);
         WebTarget target = client.target(getBaseURI());
-        System.out.println(target.path("rest").path("hello").request().accept(MediaType.TEXT_PLAIN));
+        System.out.println(target.path("rest").path("hello").request().accept(MediaType.TEXT_PLAIN).get(String.class));
+        System.out.println(target.path("rest").path("hello").request().accept(MediaType.TEXT_XML).get(String.class));
+        System.out.println(target.path("rest").path("hello").request().accept(MediaType.TEXT_HTML).get(String.class));
     }
     private static URI getBaseURI(){
-        return UriBuilder.fromUri("http://localhost:8080").build();
+        return UriBuilder.fromUri("http://localhost:8080/").build();
     }
 }
