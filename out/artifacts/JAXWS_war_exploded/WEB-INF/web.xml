@@ -17,4 +17,19 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         <servlet-name>Jersey REST Service</servlet-name>
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Jersey REST annotation</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>annotation</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey REST annotation</servlet-name>
+        <url-pattern>/restanot/*</url-pattern>
+    </servlet-mapping>
 </web-app>

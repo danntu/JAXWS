@@ -13,4 +13,15 @@ public class HelloService {
         String output = "Jersey say : "+msg;
         return Response.status(200).entity(output).build();
     }
+
+    @GET
+    @Path("{year}/{month}/{day}")
+    public Response getDate(
+            @PathParam("year") int year,
+            @PathParam("month") int month,
+            @PathParam("day") int day){
+        String date = day+"/"+month+"/"+year;
+        return Response.status(200).entity("getDate is called, day/month/year : " +date)
+                .build();
+    }
 }
