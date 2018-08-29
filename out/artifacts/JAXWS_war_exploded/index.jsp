@@ -14,7 +14,7 @@
   <a href="rest/hello">Click Here Rest Jersey</a><br>
   <a href="restanot/hello/javatpoint">Click Here Rest annotation</a><br>
   <a href="restanot/hello/2018/08/29">Click Here JAX-RS Multiple @PathParam Annotation</a><br>
-
+  <a href="restanot/files/txt">Download Text File</a>
   <form action="restanot/product/add" method="post">
     Enter Id:<input type="text" name="id"/><br/><br/>
     Enter Name:<input type="text" name="name"/><br/><br/>
