@@ -23,5 +23,12 @@
     Enter Price:<input type="text" name="price"/><br/><br/>
     <input type="submit" value="Add Product"/>
   </form>
+  <h2>File Upload Example</h2>
+  <form action="restanot/files/upload" method="post" enctype="multipart/form-data">
+    <p>
+      Select a file : <input type="file" name="file" size="45" />
+    </p>
+    <input type="submit" value="Upload File" />
+  </form>
   </body>
 </html>
